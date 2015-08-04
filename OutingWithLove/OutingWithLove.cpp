@@ -1,15 +1,14 @@
 #include"stdafx.h"
+#include"Ground.h"
+#include "OutingWithLove.h"
+#include"ColorUtil.h"
+#include"Colors.h"
 
-void worldInit(void){
-	glClearColor(0.0, 0.0, 0.0, 0.0);
-	glDepthFunc(GL_LESS);
-	glEnable(GL_DEPTH_TEST);
-	glShadeModel(GL_SMOOTH);
-	glDepthRange(0.0, 1.0);
+typedef void(GroundPointer)(void);
 
-}
-
-void drawGround(){
+void drawGroundT(){
+	ColorUtil *cu = new ColorUtil();
+	Colors    *colors = new Colors();
 	int actorGroundColors[][3]{
 		{ 128, 64, 0 },
 		{ 128, 64, 0 },
@@ -33,13 +32,24 @@ void drawGround(){
 	for (int i = 0; i < 4; i++)
 	{
 		//glColor3i(actorGroundColors[i][0], actorGroundColors[i][1], actorGroundColors[i][2]);
-		glColor3i(2147483647, 0, 0);
+		glColor3f(cu->rgbIntToFloat(colors->groundbrown[0]), cu->rgbIntToFloat(colors->groundbrown[1]), cu->rgbIntToFloat(colors->groundbrown[2]));
 		glVertex3i(actorGroundVertexs[i][0], actorGroundVertexs[i][1], actorGroundVertexs[i][2]);
 	}
+	delete cu;
+	delete colors;
 	glEnd();
 	glPopMatrix();
 	glutSwapBuffers();
 }
+void worldInit(void){
+	glClearColor(0.0, 0.0, 0.0, 0.0);
+	glDepthFunc(GL_LESS);
+	glEnable(GL_DEPTH_TEST);
+	glShadeModel(GL_SMOOTH);
+	glDepthRange(0.0, 1.0);
+
+}
+
 void myReshape(int width, int height){
 	glViewport(0, 0, width, height);
 	glMatrixMode(GL_PROJECTION);
@@ -48,7 +58,6 @@ void myReshape(int width, int height){
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 }
-
 int main(int argc, char* argv[])
 {
 	glutInit(&argc, argv);
@@ -56,13 +65,16 @@ int main(int argc, char* argv[])
 	glutInitWindowPosition(0, 0);
 	glutInitWindowSize(400, 400);
 	glutCreateWindow("OutingWithLove");
-
-
+	
+	Ground * ground = new Ground();
+	//cout << ground->drawGround << endl;
+	cout << &drawGroundT << endl;
 	worldInit();
 	glutReshapeFunc(myReshape);
-	glutDisplayFunc(&drawGround);
+	glutDisplayFunc(&drawGroundT);
+	//delete ground;
 	glutMainLoop();
-
+	
 
 	return 0;
 }

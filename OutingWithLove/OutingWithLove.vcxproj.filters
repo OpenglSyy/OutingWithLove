@@ -16,6 +16,12 @@
     <Filter Include="源文件\Actors">
       <UniqueIdentifier>{3c567157-f66c-4ea5-a791-24ea8efa14f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Utils">
+      <UniqueIdentifier>{18778b13-b6de-47ec-83b7-f1f83efedc6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Values">
+      <UniqueIdentifier>{94132f56-34a1-447b-b222-3ddde45a1342}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -34,9 +40,6 @@
       <Filter>源文件\Actors</Filter>
     </ClInclude>
     <ClInclude Include="river.h">
-      <Filter>源文件\Actors</Filter>
-    </ClInclude>
-    <ClInclude Include="ground.h">
       <Filter>源文件\Actors</Filter>
     </ClInclude>
     <ClInclude Include="tree.h">
@@ -63,6 +66,18 @@
     <ClInclude Include="bird.h">
       <Filter>源文件\Actors</Filter>
     </ClInclude>
+    <ClInclude Include="ColorUtil.h">
+      <Filter>源文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Colors.h">
+      <Filter>源文件\Values</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>源文件\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="OutingWithLove.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -70,6 +85,12 @@
     </ClCompile>
     <ClCompile Include="OutingWithLove.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorUtil.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>源文件\Actors</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

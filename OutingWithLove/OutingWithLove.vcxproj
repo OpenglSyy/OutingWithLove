@@ -82,10 +82,13 @@
     <ClInclude Include="bicycle.h" />
     <ClInclude Include="bird.h" />
     <ClInclude Include="boy.h" />
+    <ClInclude Include="Colors.h" />
+    <ClInclude Include="ColorUtil.h" />
     <ClInclude Include="dog.h" />
     <ClInclude Include="girl.h" />
     <ClInclude Include="grass.h" />
-    <ClInclude Include="ground.h" />
+    <ClInclude Include="Ground.h" />
+    <ClInclude Include="OutingWithLove.h" />
     <ClInclude Include="river.h" />
     <ClInclude Include="road.h" />
     <ClInclude Include="sky.h" />
@@ -95,6 +98,8 @@
     <ClInclude Include="tree.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ColorUtil.cpp" />
+    <ClCompile Include="Ground.cpp" />
     <ClCompile Include="OutingWithLove.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
