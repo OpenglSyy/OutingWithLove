@@ -3,6 +3,10 @@
 #include <iostream>
 
 using namespace std;
+
+#ifndef _Colors_
+#define _Colors_
+
 class Colors{
 	//在类中(.h)成员变量，不能定义的时候初始化，需要在构造函数中初始化
 public:
@@ -15,3 +19,4 @@ public:
 public:
 	int groundbrown[3];
 };
+#endif

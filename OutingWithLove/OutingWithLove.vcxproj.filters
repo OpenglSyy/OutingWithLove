@@ -75,9 +75,6 @@
     <ClInclude Include="Ground.h">
       <Filter>源文件\Actors</Filter>
     </ClInclude>
-    <ClInclude Include="OutingWithLove.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -88,9 +85,6 @@
     </ClCompile>
     <ClCompile Include="ColorUtil.cpp">
       <Filter>源文件\Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="Ground.cpp">
-      <Filter>源文件\Actors</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
