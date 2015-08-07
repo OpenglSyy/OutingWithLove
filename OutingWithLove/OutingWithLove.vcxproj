@@ -84,6 +84,7 @@
     <ClInclude Include="boy.h" />
     <ClInclude Include="Colors.h" />
     <ClInclude Include="ColorUtil.h" />
+    <ClInclude Include="Cube.h" />
     <ClInclude Include="dog.h" />
     <ClInclude Include="girl.h" />
     <ClInclude Include="grass.h" />

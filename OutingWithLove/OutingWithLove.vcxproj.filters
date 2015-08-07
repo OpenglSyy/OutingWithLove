@@ -22,6 +22,9 @@
     <Filter Include="源文件\Values">
       <UniqueIdentifier>{94132f56-34a1-447b-b222-3ddde45a1342}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Shapes">
+      <UniqueIdentifier>{ced16818-dc33-4550-ad40-3289c00fbe00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -74,6 +77,9 @@
     </ClInclude>
     <ClInclude Include="Ground.h">
       <Filter>源文件\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>源文件\Shapes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
